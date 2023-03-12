@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+body{
+    background-color:  rgba(25, 41, 41, 0.226);;
+    font-family: "OpenSans" sans-serif;
+    overflow: auto;
+    
+}
+
+.navbar{
+    position: fixed;
+    top: 0 ; left: 0;
+    z-index: 1000;
+    height: 120%;
+    width: 120px;
+    background: rgba(25, 41, 41, 0.151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    opacity: 5;
+ }
+
+.navbar a.active{
+    background: rgb(255, 255, 255);
+    color: black;
+    
+   
+}
+.navbar a:hover:not(.active){
+    background-color: rgb(0, 0, 0);
+    color: white;
+   
+    
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        width: 120px;
+        height: auto;
+        position: relative;
+    }
+}
+    .navbar a {
+        float: left;
+    }
+    ul {
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      } 
+.navbar ul{
+    list-style: none;
+    padding: 1rem; 
+    
+}
+
+.navbar ul li a{
+    display: block;
+    width: 120px;
+    margin: 1px 0;
+    background:  rgba(25, 41, 41, 0.151);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+.navbar ul li a:hover{
+    background: black;
+    color: white;
+   
+    transition: all 0.4s ease;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/code.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    z-index: 2;
+    min-height: 500px;
+  }
+
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%, -50%);
+    color: white;
+    text-shadow: 5px black;
+}
+
+.hero-text p{
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 4%;
+    font-size: bold;
+    font-style: italic;
+
+}
+
+.hero-text .heading{
+    text-align: center;
+    position: absolute;
+}
+
+#about{
+    margin-left: 20px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+
+.card img {
+    transition: all 0.4s ease;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.col-img{
+    background-image: url(./Images/kono.JPG);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    
+}
